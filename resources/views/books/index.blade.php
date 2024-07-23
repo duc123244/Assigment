@@ -41,7 +41,7 @@
                             : '<span class="badge bg-danger">Hết hàng</span>' !!}
                     </td>
                     <td>{{ $item->category ? $item->category->name : 'N/A' }}</td>
-                    <td>
+                    <td class="d-flex gap-1">
                         <a href="{{ route('books.show', $item) }}" class="btn btn-info">
                             Xem</a>
                         <a href="{{ route('books.edit', $item) }}" class="btn btn-success">
